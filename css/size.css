@@ -1,0 +1,16 @@
+.flag-size{
+    position: absolute;
+    size: 10px; 
+    height: 30px;
+    border-radius: 10px;
+}
+
+.flag-dropdown{
+    width: 250px;
+    padding-left: 40px;
+}
+
+.ul-icon-size{
+    height: 40px;
+
+}
