@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color: rgb(247,248,248);">
   <!-- fix crecle -->
 <div class="rounded-5 fix-cercle2" style="display: flex; justify-content: center;"></div>
 <div class="rounded-5 fix-cercle" style="display: flex; justify-content: center;">
@@ -24,37 +24,18 @@
         <div class="container-md">
 
         <!-- flag Dropdown -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-            Right-aligned but left aligned when large screen
+        <div class="btn-group dropdown">
+          <button type="button" class="btn dropdown-content dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <img src="assets/flags/sri-lanka.png" class="flag-size">
           </button>
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-            <li><button class="dropdown-item" type="button">Action</button></li>
-            <li><button class="dropdown-item" type="button">Another action</button></li>
-            <li><button class="dropdown-item" type="button">Something else here</button></li>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start flag-dropdown">
+            <li><button class="dropdown-item" type="button"><img src="assets/flags/sri-lanka.png" class="flag-size"><p class="flag-font">Sri Lanka</p></button></li>
+            <li><button class="dropdown-item" type="button"><img src="assets/flags/bangladesh-flag.png" class="flag-size"><p class="flag-font">Bangladesh</p></button></li>
+            <li><button class="dropdown-item" type="button"><img src="assets/flags/maldives-flag.png" class="flag-size"><p class="flag-font">Maldives</p></button></li>
+            <li><button class="dropdown-item" type="button"><img src="assets/flags/myanmar-flag.png" class="flag-size"><p class="flag-font">Myanmar</p></button></li>
           </ul>
         </div>
-        <!-- <div class="btn-group" style="width: 60px; position: relative; left: 980px; z-index: 2000;" > -->
-          <!-- <button type="button"  class="btn dropdown-toggle position-absolute " data-bs-toggle="dropdown" data-bs-display="" aria-expanded="false">
-            <img src="./assets/flags/sri-lanka.png" class="flag-size" style="position: relative; ">
-          </button> -->
-
-          <!-- <button class="dropdown" type="button">
-            <span>Mouse over me</span>
-            <div class="dropdown-content">
-              <p>Hello World!</p>
-            </div>
-          </button>
-           -->
-          <!-- <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start flag-dropdown" style="z-index: 4000;">
-            <li ><button class="dropdown-item"  style="z-index: 3000;" type="button"><img src="./assets/flags/sri-lanka.png" class="flag-size">    Sri Lanka</button></li>
-            <li><button class="dropdown-item"  style="z-index: 3000;"  type="button">Another action</button></li>
-            <li><button class="dropdown-item"  style="z-index: 3000;" type="button">Something else here</button></li>
-          </ul>
-          <div class=" position-relative" style="right: 5px; font-size: 25px; padding-bottom: 5px; color: rgb(229, 220, 220);"> |</div>
-        </div> -->
         
-
           <div class="nav-bar-font position-relative" style="right: 369px;" >සිංහල</div>
           <div class="nav-bar-font position-relative" style="right: 735px;" >தமிழ்</div>
           <div class="nav-bar-font position-relative" style="right: 899px;"> About us</div>
@@ -201,11 +182,11 @@
 
 <!-- Application Select -->
 <div class="dropdown">
-  <a class="btn bg-light-subtle border rounded-pill applcatin-dropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <a class="btn bg-light-subtle border rounded-pill applcatin-dropDown position-relative"  style="right: 500px !important;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Select One
   </a>
 
-  <ul class="dropdown-menu rounded-4 applcatin-dropDown-inside">
+  <ul class="dropdown-menu rounded-5 applcatin-dropDown-inside">
     <li><a class="dropdown-item application-dropdown-font fw-semibold" href="#">Savings Accounts</a></li>
     <li><a class="dropdown-item application-dropdown-font fw-semibold" href="#">Deposits</a></li>
     <li><a class="dropdown-item application-dropdown-font fw-semibold" href="#">Deposits</a></li>
@@ -260,6 +241,30 @@
     <li class="list-group-item"><button type="button" class="btn btn-light border rounded-pill bule-line-button bule-line-font" style="left: 90px;">Prepaid Card Balance</button></li>
   </ul>
 </div>
+
+<h1 class="p-com" style="top: 70px !important; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 100; color: black !important;">Choose the Card that fits you</h1>
+<!-- Cards -->
+<ul style="display: flex; flex-direction: row; justify-content: space-around; position: relative; top: 130px;">
+  <li class="list-group-item" >
+    <button class="card-button">
+        <img src="assets/credit-cards/Master Credit Gold-01.png" class="credit-card-img">
+    Card
+    </button>
+  </li>  
+  <li class="list-group-item" >
+    <button class="card-button">
+    Card
+    </button>
+  </li>
+  <li class="list-group-item" >
+    <button class="card-button">
+    Card
+    </button>
+  </li>
+</ul>
+<br><br><br><br>
+<h1>up</h1>
+
 
 
 

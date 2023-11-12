@@ -4,6 +4,13 @@
     padding: 8px;
 }
 
+.flag-font{
+    font-size: 15px;
+    position: relative;
+    top: 3px;
+    left: 50px;
+}
+
 .ul-font{
     font-size: 17px;
     font-weight: 600;
