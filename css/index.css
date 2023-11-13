@@ -166,8 +166,11 @@ html{
         margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
-      }
-.card-button:hover {
+        overflow: hidden;
+}
+
+
+.card-button:hover{
         background-image: linear-gradient(to left, rgb(9,89,200), rgb(9,75,168));
         color: white;
 }
@@ -175,10 +178,20 @@ html{
 .credit-card-img{
     width: 250px;
     position: relative;
-    object-position: -85px;
-    top: 20px;
+    object-position: -80px;
+    top: 30px;
     right: 100px;
-    z-index: 1;
+}
+
+.view-allCard-btn{
+    width: 180px;
+    height: 50px;
+    padding: 8px;
+    padding-left: 28px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
 }
     
 
