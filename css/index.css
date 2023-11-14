@@ -167,6 +167,7 @@ html{
         transition-duration: 0.4s;
         cursor: pointer;
         overflow: hidden;
+        
 }
 
 
@@ -188,10 +189,14 @@ html{
     height: 50px;
     padding: 8px;
     padding-left: 28px;
-    background-color: yellow;
+    position: relative;
+    top: 150px;
+    left: 720px;
+    background-image: linear-gradient(to left, rgb(250,222,65), rgb(249,209,37));
     display: flex;
     align-items: center;
     border-radius: 35px;
+    cursor: pointer;
 }
     
 
