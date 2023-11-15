@@ -148,7 +148,7 @@
 </div>
 
 <!-- UL list -->
-<ul class="ul-list bg-body-tertiary border" style="height: 120px; position: relative; bottom: 110px;">
+<ul class="ul-list bg-body-tertiary border" style="height: 120px; position: relative; cursor: pointer; display: flex; justify-content: space-around; bottom: 119px;">
   <li class="list-group-item bg-body-tertiary"><img src="assets/icons/calculator.png" class="ul-icon-size"><p class="ul-font ul-font-set">Tools & Calculator</p></li>
   <li class="list-group-item bg-body-tertiary"><img src="assets/icons/Rewards & Promotion.png" class="ul-icon-size"><p class="ul-font ul-font-set">Rewards & Promotion</p></li>
   <li class="list-group-item bg-body-tertiary"><img src="assets/icons/Rates & Tariffs.png" class="ul-icon-size"><p class="ul-font ul-font-set">Rates & Tariffs</p></li>
@@ -178,7 +178,7 @@
 </div>
 
 <!-- Account Types -->
-<ul style=" width: 63%; display: flex; flex-direction: row; position: relative; left: 100px; top: 50px;">
+<ul style=" width: 63%; display: flex; flex-direction: row; position: relative; left: 200px; top: 50px;">
   <li class="list-group-item border-0 ">
     <button type="button" class="btn btn-outline-primary acountType-btn" >
       <img src="assets/account-types/Savings Accounts.png" class="acountType-btn-icon">
@@ -224,7 +224,7 @@
 </div>
 
 <h1 class="p-com" style="top: 70px !important; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 100; color: black !important;">Choose the Card that fits you</h1>
-<!-- Cards -->
+<!--Bank Cards -->
 <ul style="display: flex; flex-direction: row; justify-content: space-around; position: relative; top: 130px;">
   <li class="list-group-item" >
     <div>
@@ -253,14 +253,80 @@
   </li>  
 </ul>
 
+<div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-<div class="view-allCard-btn shadow">View All Cards ⮕</div>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <img src="./assets/Display Banner/Ramada.jpg" style="width:100%; height: 350px;">
+  </div>
+
+  <div class="mySlides">
+    <img src="./assets/Display Banner/Sri-Lankan.jpg" style="width:100%; height: 350px; ">
+  </div>
+
+  <div class="mySlides">
+    <img src="./assets/Display Banner/common-hotel-july-2023.jpg" style="width:100%; height: 350px;">
+  </div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center; position: relative; top: 155px; ">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+
+<div style="width: 100%; height: 50px; border: 3px solid black;">
+</div>
+<!-- Mobile App div -->
+<div class="mobile-app-div ">
+  <div>
+    <h1 style=" position: relative; left: 20px; font-weight: 500; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">Bank anytime, anywhere with ComBank Apps</h1>
+  </div>
+  
+  <div class="user-select-none" style="padding: 5px;">
+      <img src="assets/Mobile App/aggregator.png" class="mobile-img">
+      <img src="assets/Mobile App/combank-agreegator-icon.png" class="com-bank-app-logo">
+      <p class="p-com" style="font-size: 29px; font-weight: 500; color: rgb(10,91,205); position: relative; bottom: 330px; left: 125px;">ComBank</p>
+      <div style="position: relative; width: 360px; bottom: 330px; left: 480px;">
+        <p >With ComBank App you can install multiple Apps of 
+          Commercial Bank with just one click. Simply register for 
+          the Apps you need and experience a variety of banking 
+          services through your mobile.
+       </p>
+      </div>
+      <ul style="list-style: none; display: flex; flex-direction: row; position: relative; left: 447px; bottom: 320px; width: 10%;">
+         <li><img class="list-group-item app-download-img" src="./assets/Mobile App/play-store.png"></li>
+        &nbsp &nbsp &nbsp 
+        <li><img class="list-group-item app-download-img" src="./assets/Mobile App/apple-store.png"></li>
+      </ul> 
+      <div class="tell-more-div rounded-pill">
+        <p>&nbsp Tell Me More &nbsp 🡢</p>
+      </div>    
+  </div>
+</div>
 
 
+<!-- Other Apps -->
+<div class="other-apps user-select-none">
+  <button type="button" style="border: none; padding-left:150px; padding-top: 20px; background-color: rgb(247,248,248);;">
+    <img src="assets/App Logos/combank-agreegator-icon.png" class="app-logos">
+    <p class="app-logo-font" style="position: relative; left: 95px; bottom: 60px;">ComBank</p>
+  </button>
+  <button type="button" style="border: none; padding-left:150px; padding-top: 20px; background-color: rgb(247,248,248);;">
+    <img src="assets/App Logos/Combank-Digital_app_icon.png" class="app-logos">
+    <p class="app-logo-font" style="position: relative; left: 120px; bottom: 60px;">ComBank Digital</p>
+  </button>
+  <button type="button" style="border: none; padding-left:150px; padding-top: 20px; background-color: rgb(247,248,248);;">
+    <img src="assets/App Logos/Flash_app_icon.png" class="app-logos">
+    <p class="app-logo-font" style="position: relative; left: 160px; bottom: 60px;">Flash Digital Bank Account</p>
+  </button>
 
-
-
-
+</div>
       
 
 
@@ -274,5 +340,6 @@
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
+    <script src="script/index.js"></script>
 </body>
 </html>
